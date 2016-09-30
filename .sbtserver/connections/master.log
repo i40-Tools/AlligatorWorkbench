@@ -1,0 +1,7 @@
+New log file opened at Fri Sep 30 07:52:42 EEST 2016 by 8304@omar-PC
+Taking next connection to: 58928
+New client attempting to connect on port: 58929-58928
+  Address = /172.16.1.102:58928
+This client on port 58929 has uuid cf626230-1785-438a-a332-13caf3281fbc configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-cf626230-1785-438a-a332-13caf3281fbc
+Taking next connection to: 58928
