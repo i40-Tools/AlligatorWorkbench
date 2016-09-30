@@ -25,29 +25,7 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        Files2Facts filesAMLInRDF = new Files2Facts();
-        try {
-            filesAMLInRDF.prologFilePath();
-            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".aml");
-            filesAMLInRDF.convertRdf();
-            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".ttl");
-            filesAMLInRDF.generateExtensionalDB(ConfigManager.getFilePath());
-
-            DeductiveDB db = new DeductiveDB();
-            Integration integ = new Integration();
-            try {
-                integ.integrate();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-            }
-
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
         return ok(index.render(ConfigManager.getFilePath()));
-    }
+      }
     }
