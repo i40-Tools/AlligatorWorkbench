@@ -11,25 +11,7 @@ import util.ConfigManager;
 public class AlligatorMain {
 
     public static void loadAll() {
-        Files2Facts filesAMLInRDF = new Files2Facts();
-        try {
-
-            filesAMLInRDF.prologFilePath();
-            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".aml");
-            filesAMLInRDF.convertRdf();
-            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".ttl");
-            filesAMLInRDF.generateExtensionalDB(ConfigManager.getFilePath());
-            DeductiveDB deductiveDB = new DeductiveDB();
-            deductiveDB.consultKB();
-            Integration integ = new Integration();
-            integ.integrate();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }
-
+      
     }
 
 }

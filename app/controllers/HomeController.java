@@ -3,11 +3,10 @@ package controllers;
 import integration.Integration;
 import play.mvc.*;
 
-import start.DeductiveDB;
-import start.Files2Facts;
-import util.ConfigManager;
+import main.DeductiveDB;
 import views.html.*;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
@@ -16,16 +15,25 @@ import java.io.FileNotFoundException;
  */
 public class HomeController extends Controller {
 
-
-
     /**
      * An action that renders an HTML page with a welcome message.
      * The configuration in the <code>routes</code> file means that
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
-    public Result index() {
 
-        return ok(index.render(ConfigManager.getFilePath()));
+
+
+
+    DeductiveDB deductiveDB;
+    public Result index() {
+             deductiveDB = new DeductiveDB();
+
+        try {
+            deductiveDB.consultKB();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return ok(index.render("omar"));
       }
     }
