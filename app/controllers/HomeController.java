@@ -1,13 +1,12 @@
 package controllers;
 
 import integration.Integration;
-import play.mvc.*;
-
-import main.DeductiveDB;
-import views.html.*;
-
-import java.io.File;
-import java.io.FileNotFoundException;
+import play.mvc.Controller;
+import play.mvc.Result;
+import point.DeductiveDB;
+import point.Files2Facts;
+import util.ConfigManager;
+import views.html.index;;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -24,16 +23,39 @@ public class HomeController extends Controller {
 
 
 
-
-    DeductiveDB deductiveDB;
     public Result index() {
-             deductiveDB = new DeductiveDB();
 
+
+        Files2Facts filesAMLInRDF = new Files2Facts();
         try {
+
+            filesAMLInRDF.prologFilePath();
+            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".aml");
+            filesAMLInRDF.convertRdf();
+            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".ttl");
+            filesAMLInRDF.generateExtensionalDB(ConfigManager.getFilePath());
+
+            DeductiveDB deductiveDB = new DeductiveDB();
+            // formats the output.txt in java objects
+           deductiveDB.readWorkingDirectory();
+
+            deductiveDB.executeKB();
+            // formats the output.txt in java objects
+            deductiveDB.readOutput();
             deductiveDB.consultKB();
+
+            Integration integ = new Integration();
+            integ.integrate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
+
+
         return ok(index.render("omar"));
-      }
+
     }
+}
