@@ -2876,3 +2876,10 @@ Sending msg to client activator-73bb0e70-f780-40f7-8144-a638d9676bc9: Background
 Sending msg to client activator-73bb0e70-f780-40f7-8144-a638d9676bc9: BackgroundJobLogEvent(2,LogMessage(error,	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)))
 Sending msg to client activator-73bb0e70-f780-40f7-8144-a638d9676bc9: BackgroundJobLogEvent(2,LogMessage(error,	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)))
 Sending msg to client activator-73bb0e70-f780-40f7-8144-a638d9676bc9: BackgroundJobLogEvent(2,LogMessage(error,	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)))
+Got request: UnlistenToEvents()
+Sending msg to client activator-73bb0e70-f780-40f7-8144-a638d9676bc9: (25,ReceivedResponse())
+Reading next message from client.
+Client activator-73bb0e70-f780-40f7-8144-a638d9676bc9 closed, java.net.SocketException: Software caused connection abort: recv failed, shutting down
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client activator-73bb0e70-f780-40f7-8144-a638d9676bc9
+Client activator-73bb0e70-f780-40f7-8144-a638d9676bc9 thread exiting.

@@ -231,3 +231,38 @@ Copy resource mappings:
 Total time: 5 s, completed Oct 17, 2016 8:37:57 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4f2f376a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7e83fe64 directly...
+Java compilation took 0.389036239 s
+Java analysis took 0.165328766 s
+Java compile + analysis took 0.575006894 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\application.conf,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\application.conf)
+	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\logback.xml,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\logback.xml)
+	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\routes,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\routes)

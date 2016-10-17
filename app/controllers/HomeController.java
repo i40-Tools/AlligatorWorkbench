@@ -55,7 +55,7 @@ public class HomeController extends Controller {
         }
 
 
-        return ok(index.render("omar"));
+        return ok(index.render("Allegator Web APP"));
 
     }
 }
