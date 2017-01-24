@@ -1,9 +1,0 @@
-New log file opened at Mon Jan 23 04:52:15 EET 2017 by 6700@omar-PC
-Sending msg to client play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\.sbtserver\connections\master.log))
-Sending msg to client play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\.sbtserver\master.log))
-Sending msg to client play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\.sbtserver\connections\play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb.log))
-Reading next message from client.
-Client play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb closed, java.net.SocketException: Connection reset, shutting down
-Stopping client.
-Dropping message (0,ReceivedResponse()) to dead client play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb
-Client play-fork-run-fe7fd412-2a59-43b3-ad59-aab2da8aabfb thread exiting.
