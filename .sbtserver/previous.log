@@ -1,5 +1,5 @@
-New log file opened at Tue Jan 24 07:58:34 EET 2017 by 7956@omar-PC
-jvm 7956@omar-PC
+New log file opened at Sun Aug 13 03:08:35 EEST 2017 by 7596@omar-PC
+jvm 7596@omar-PC
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.40-b25
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\project, returning: (alligatorworkbench-build)
 Loading project definition from C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5b3371e7, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@23ee4ab4, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,145 +69,54 @@ Set current project to play-java (in build file:/C:/Users/omar/Documents/workspa
 > server-handle-next-server-request
 > {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3de14216, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@50f8115e, check cycles: false
+Invalidating C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\main\AlligatorMain.class: stamp changed from lastModified(1502582252956) to lastModified(1502582354228)
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\Similar.java)
 Removed products: Set()
 External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Modified binary dependencies: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\main\AlligatorMain.class)
+Initial directly invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\Similar.java)
 
 Sources indirectly invalidated by:
 	product: Set()
-	binary dep: Set()
+	binary dep: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\AlligatorMain.java)
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\Similar.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\AlligatorMain.java)
 
-Total time: 2 s, completed Jan 24, 2017 7:58:50 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@3b41daee, check cycles: false
-Total time: 0 s, completed Jan 24, 2017 7:58:50 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@365ad92d, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Jan 24, 2017 7:58:52 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@7f67a1c9, check cycles: false
-Total time: 0 s, completed Jan 24, 2017 7:58:52 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@6bc082db, check cycles: false
-Total time: 0 s, completed Jan 24, 2017 7:59:18 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@289fa90b, check cycles: false
-Total time: 1 s, completed Jan 24, 2017 7:59:23 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@2d75b99b, check cycles: false
-Total time: 0 s, completed Jan 24, 2017 7:59:26 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@1a6a6478, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\application.conf,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\application.conf)
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\logback.xml,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\logback.xml)
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\routes,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\routes)
-Total time: 5 s, completed Jan 24, 2017 7:59:43 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2b47ee19, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@3145a8a2 directly...
-Java compilation took 2.60060597 s
-Java analysis took 0.36352712 s
-Java compile + analysis took 3.03333192 s
+Read from stdout: Compiling 3 Java sources to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@50155f94 directly...
+Read from stdout: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java uses or overrides a deprecated API.
+C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: Recompile with -Xlint:deprecation for details.
+C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 2.835778612 s
+Java analysis took 0.547586537 s
+Java compile + analysis took 3.423956317 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\application.conf,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\application.conf)
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\logback.xml,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\logback.xml)
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\routes,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\routes)
-Total time: 7 s, completed Jan 24, 2017 8:28:59 AM
+Total time: 8 s, completed Aug 13, 2017 3:09:05 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2377cfa2, check cycles: false
+> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@5a866e93, check cycles: false
+Total time: 0 s, completed Aug 13, 2017 3:09:05 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6dd8a79b, check cycles: false
+Invalidating C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\main\AlligatorMain.class: stamp changed from lastModified(1502582354228) to lastModified(1502582942747)
+Invalidating C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\main\Similar.class: stamp changed from lastModified(1502572717972) to lastModified(1502582942940)
 
 Initial source changes: 
 	removed:Set()
@@ -215,19 +124,44 @@ Initial source changes:
 	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
-Modified binary dependencies: Set()
+Modified binary dependencies: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\main\AlligatorMain.class, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\main\Similar.class)
 Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
-	binary dep: Set()
+	binary dep: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\AlligatorMain.java)
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java, C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\main\AlligatorMain.java)
 
-Copy resource mappings: 
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\application.conf,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\application.conf)
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\logback.xml,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\logback.xml)
-	(C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\conf\routes,C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes\routes)
-Total time: 6 s, completed Jan 24, 2017 8:33:34 AM
+Read from stdout: Compiling 2 Java sources to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6a4d486b directly...
+Read from stdout: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java uses or overrides a deprecated API.
+C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: Recompile with -Xlint:deprecation for details.
+C:\Users\omar\Documents\workspace-sts-3.7.0.RELEASE\AlligatorWorkbench\app\controllers\IntegrateController.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.572562732 s
+Java analysis took 0.344976962 s
+Java compile + analysis took 0.965217259 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Aug 13, 2017 3:09:08 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/C:/Users/omar/Documents/workspace-sts-3.7.0.RELEASE/AlligatorWorkbench/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e985880, check cycles: false
+Total time: 0 s, completed Aug 13, 2017 3:09:08 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 7596@omar-PC logs at Sun Aug 13 03:09:17 EEST 2017, goodbye.

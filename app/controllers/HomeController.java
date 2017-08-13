@@ -1,11 +1,7 @@
 package controllers;
 
-import integration.Integration;
 import play.mvc.Controller;
 import play.mvc.Result;
-import point.DeductiveDB;
-import point.Files2Facts;
-import util.ConfigManager;
 import views.html.*;
 
 /**
@@ -54,8 +50,7 @@ public class HomeController extends Controller {
 //            throwable.printStackTrace();
 //        }
 
-
-        return ok(index.render("Allegator Web APP"));
+        return ok(index.render("Alligator Main Web"));
 
     }
 }
