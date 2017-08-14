@@ -2,6 +2,7 @@ package controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;
+import util.ConfigManager;
 import views.html.*;
 
 /**
@@ -16,41 +17,8 @@ public class HomeController extends Controller {
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
-
-
-
     public Result index() {
-
-
-//        Files2Facts filesAMLInRDF = new Files2Facts();
-//        try {
-//
-//            filesAMLInRDF.prologFilePath();
-//            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".aml");
-//            filesAMLInRDF.convertRdf();
-//            filesAMLInRDF.readFiles(ConfigManager.getFilePath(), ".ttl");
-//            filesAMLInRDF.generateExtensionalDB(ConfigManager.getFilePath());
-//
-//            DeductiveDB deductiveDB = new DeductiveDB();
-//            // formats the output.txt in java objects
-//           deductiveDB.readWorkingDirectory();
-//
-//            deductiveDB.executeKB();
-//            // formats the output.txt in java objects
-//            deductiveDB.readOutput();
-//            deductiveDB.consultKB();
-//
-//            Integration integ = new Integration();
-//            integ.integrate();
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//
-//        } catch (Throwable throwable) {
-//            throwable.printStackTrace();
-//        }
-
+        ConfigManager.loadConfig();
         return ok(index.render("Alligator Main Web"));
-
     }
 }

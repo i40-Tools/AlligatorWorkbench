@@ -37,11 +37,10 @@ public class IntegrateController extends Controller {
 
         File theDir = new File("c://Result");
 
-// if the directory does not exist, create it
+        // if the directory does not exist, create it
         if (!theDir.exists()) {
-                theDir.mkdir();
-        }
-        else{
+            theDir.mkdir();
+        } else {
             PrintWriter writer = new PrintWriter("c:\\Result\\seed-0.aml", "UTF-8");
             writer.println(file1);
             writer.close();
@@ -59,8 +58,7 @@ public class IntegrateController extends Controller {
         }
 
 
-
-       Files2Facts standardFiles = new Files2Facts();
+        Files2Facts standardFiles = new Files2Facts();
         Similar similar = new Similar();
         AlligatorMain main = new AlligatorMain();
         ConfigManager.filePath = "c://Result/";
@@ -69,34 +67,36 @@ public class IntegrateController extends Controller {
         main.executePSLAproach();
 
         String everything;
-        try(FileInputStream inputStream = new FileInputStream("c://Result/PSL/test/graph.txt")) {
+        try (FileInputStream inputStream = new FileInputStream("c://Result/PSL/test/graph.txt")) {
             everything = IOUtils.toString(inputStream);
             // do something with everything string
         }
 
-        String everything2="<Accuracy>";
-String line;
+        String everything2 = "<Accuracy>";
+        String line;
 
-        BufferedReader br ;
+        BufferedReader br;
 
         br = new BufferedReader(
                 new FileReader(new File("c://Result/PSL/test/Precision/F1NoTraining.txt")));
         while ((line = br.readLine()) != null) {
             if (line.contains("Precision :")) {
-                everything2+="<Precison>"+line.replace("Precision :", "")+"</Precison>";
+                everything2 += "<Precison>" + line.replace("Precision :", "") + "</Precison>";
             }
             if (line.contains("Recall:")) {
-                everything2+="<Recall>"+line.replace("Recall:", "")+"</Recall>";;
+                everything2 += "<Recall>" + line.replace("Recall:", "") + "</Recall>";
+                ;
             }
             if (line.contains("Fmeasure:")) {
-                everything2+="<Fmeasure>"+line.replace("Fmeasure:", "")+"</Fmeasure>";;
+                everything2 += "<Fmeasure>" + line.replace("Fmeasure:", "") + "</Fmeasure>";
+                ;
             }
 
         }
 
-        return ok(everything.replaceAll(" ","")+everything2+"</Accuracy></Result>");
+        return ok(everything.replaceAll(" ", "") + everything2 + "</Accuracy></Result>");
 
-    //    return ok(file2);
+        //    return ok(file2);
         // return ok("<Caex><Dummy>changess from backend and backendsssssss and backend"+receivedText+"</Dummy></Caex>");
 
     }
