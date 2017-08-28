@@ -1419,3 +1419,21 @@ canvas {
   background: #555555;
   border-color: #555555;
 }
+
+#compare .CodeMirror-gutter-text {
+    padding: 5px 0 0 0;
+}
+#compare .CodeMirror-lines pre, #compare .CodeMirror-gutter-text pre {
+    line-height: 18px;
+    color: rgb(92,184,92);
+}
+.CodeMirror-linewidget {
+    overflow: hidden;
+}
+#compare .CodeMirror-scroll {
+    height: 100%;
+    overflow: auto;
+}
+.CodeMirror {
+    line-height: 18px;
+}

@@ -17,10 +17,11 @@
         <meta name="author" content="">
         <title>Alligator</title>
             <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/styles.css")'> title="mainStyle">
         <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/codemirror.css")' />
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.versioned("stylesheets/mergely.css")' />
+        <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/styles.css")' title="mainStyle">
     </head>
-
     <section class="well well-lg">
         <div class="container">
             <div class="row">
@@ -41,6 +42,8 @@
         <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.fullPath("react", "react.js"))'></script>
 
         <div  id="app"></div>
+        <script type="text/javascript" src='@routes.Assets.versioned("javascripts/codemirror.js")'></script>
+        <script type="text/javascript" src='@routes.Assets.versioned("javascripts/mergely.min.js")'></script>
         <script type="text/javascript" src='@routes.Assets.versioned("javascripts/client.min.js")'></script>
 
     </body>

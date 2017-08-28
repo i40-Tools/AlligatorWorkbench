@@ -1,3 +1,1 @@
-2017-08-13 05:58:02,870 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-08-13 06:01:32,422 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
-2017-08-13 06:06:54,025 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2017-08-28 11:01:18,027 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
