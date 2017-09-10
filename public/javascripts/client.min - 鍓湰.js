@@ -26744,7 +26744,6 @@
 	  value: true
 	});
 	exports.renderXML = renderXML;
-	exports.returnJSON = returnJSON;
 	
 	var _treeDrawer = __webpack_require__(237);
 	
@@ -26870,8 +26869,8 @@
 	    // if after the end of the process, the stack is not empty - means number of opening tags is bigger than closing
 	    alert('XML file is not correct!');
 	  }
-
-
+	  console.log("----------------------");
+	  console.log(tagArray);
 	  return tagArray;
 	} /* eslint-disable */
 	
@@ -27046,21 +27045,12 @@
 	  }
 	
 	  maxWidth += 1;
+	console.log("111111111111");
+	console.log(jsonText);
+	console.log(htmlTag);
 	  (0, _treeDrawer.drawTree)(htmlTag, jsonText, Math.max.apply(null, depthArray), maxWidth);
 	}
 	/* eslint-enable */
-
-
-	function returnJSON(file, impNodes, impAttr) {
-
-	  var tagArray = xmlToArray(file); // returns an array of all nodes with related info
-
-	  var mapArray = arrayMapping(tagArray, impNodes, impAttr);
-
-	  var jsonText = [objToJSON(mapArray, 0, false)]; // converts array into a JSON file
-	  return jsonText;
-	}
-
 
 /***/ }),
 /* 237 */
@@ -37277,7 +37267,7 @@
 	
 	      if (xmlI != "") {
 	        try {
-
+	console.log(_renderXML.renderXML);
 	          (0, _renderXML.renderXML)('.visual-div', xmlI, [], []);
 	        } catch (err) {
 	          this.setState({ error: 'Error while parsing XML' }); // eslint-disable-line
@@ -37311,57 +37301,23 @@
 	      // this.props.showDataFileA(this.props.xml);
 	      var xml = this.props.xml;
 	      //this.props.showDataFileA(this.props.xml);
+	
 	      var xmlB = this.props.xmlB;
 	      var FileA = this.props.FileA;
 	      var FileB = this.props.FileB;
 	
+	
 	      AmlActions.getData(xml, xmlB, FileA, FileB);
-
 	    }
 	
 	    // main html part for visualization  
 	
 	  }, {
-	    key: "getJsonObj",
-	    value: function getJsonObj(xmlI) {
-	    	// var xmlI = this.state.xmlI;
-
-	      if (xmlI != "") {
-
-					var result = _renderXML.returnJSON( xmlI, [], []);
-					var conflicts = result[0].children[0].children;
-					var accuracy = result[0].children[1].children;
-
-					$(".conflict-block").before('<div class="row col-md-12 title"> Conflict </div>');
-					$(".accuracy-block").before('<div class="row col-md-12 title"> Accuracy </div>');
-
-					for (var i=0; i < conflicts.length; i++) {
-							var curr_conf = conflicts[i].type;
-					    $(".conflict-block").append('<div class="row conf-box"><div class="row col-md-3 conf-title">'  + curr_conf  +'</div><div class="row col-md-9 ' + curr_conf + '"></div></div>');
-
-						for (var j = 0; j<conflicts[i].children.length; j++) {
-					        var aml_diff = conflicts[i].children;
-					        $("." + curr_conf).append('<div class="row col-md-12 conf-item">'  + aml_diff[j].type +'</div>');
-						}
-					}
-
-					for (var i=0; i < accuracy.length; i++) {
-
-					    $(".accuracy-block").append('<div class="row col-md-12 accu-item">'  + accuracy[i].value + " " + accuracy[i].type +'</div>');
-					}
-
-	      }
-
-			}
-	  }, {
 	    key: "render",
 	    value: function render() {
 	      var xmlI = this.state.xmlI; // getting fileA content
-
+	
 	      console.log(xmlI);
-	      if (xmlI != "") {
-	        this.getJsonObj(xmlI);
-	      }
 	
 	      // const xmlComponents = xmlI.map((xml) => {
 	      //      return <Xml key={xml.id} {...xml}/>;
@@ -37373,7 +37329,7 @@
 	        null,
 	        _react2.default.createElement(
 	          "button",
-	          { className: "btn btn-primary", id: "fileA", onClick: this.getResponse.bind(this, xmlI) },
+	          { className: "btn btn-primary", id: "fileA", onClick: this.getResponse.bind(this) },
 	          "Integrate"
 	        ),
 	        _react2.default.createElement("br", null),
@@ -37385,24 +37341,15 @@
 	          { className: "integrat-block row" },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "row col-md-8 conflicts" },
-	            _react2.default.createElement(
-	            	"div",
-			           { className: "row col-md-12 conflict-block" }
-	            )
+	            { className: "row col-md-9 conflict-block" }
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "row col-md-3 accuracys" },
-	            _react2.default.createElement(
-	            	"div",
-			           { className: "row col-md-12 accuracy-block" }
-	            )
+	            { className: "row col-md-3 accuracy-block" }
 	          )
 	        ),
 
 	        this.visual()
-	        
 	      );
 	    }
 	  }]);

@@ -1437,3 +1437,44 @@ canvas {
 .CodeMirror {
     line-height: 18px;
 }
+.visual-div {
+  display: none;
+}
+.integrat-block {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.integrat-block .title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600px;
+  border: 1px solid #ABABAB;
+}
+.integrat-block .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0px;
+}
+.integrat-block .conflicts {
+  margin-right: 30px;
+}
+.integrat-block .conf-box {
+  border-bottom: 1px solid #ABABAB;
+  border-left: 1px solid #ABABAB;
+  border-right: 1px solid #ABABAB;
+}
+.integrat-block .conf-title {
+  height: 60px;
+  line-height: 56px;
+}
+.integrat-block .conf-item {
+  height: 30px;
+  line-height: 30px;
+}
+.integrat-block .accu-item {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ABABAB;
+  border-left: 1px solid #ABABAB;
+  border-right: 1px solid #ABABAB;
+}
